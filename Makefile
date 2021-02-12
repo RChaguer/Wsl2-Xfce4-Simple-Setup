@@ -1,16 +1,16 @@
-all: install start
+all: install
 
 install : guiwsl.sh interface.sh
-					chmod 0755 guiwsl.sh
- 					sudo ./guiwsl.sh
-					
+	chmod 0755 guiwsl.sh
+	./guiwsl.sh
+
 interface : install
 
 start :
-					interface start
+	interface start
 
 stop :
-					interface stop
+	interface stop
 
 restart :
-					interface restart
+	interface restart
