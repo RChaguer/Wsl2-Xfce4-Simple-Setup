@@ -7,7 +7,7 @@ usage() {
 if [[ $# -ne 1 ]]; then
   usage;
 else
-  sudo /etc/init.d/xrdp $1 > 2;
+  sudo /etc/init.d/xrdp $1 >> status.log;
   if [[ $? -ne "0" ]]; then
     usage;
   fi
